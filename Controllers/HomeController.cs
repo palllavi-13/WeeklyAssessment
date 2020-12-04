@@ -18,6 +18,14 @@ namespace WebAppAzure.Controllers
             _logger = logger;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
         public IActionResult Home()
         {
             return View();
@@ -27,9 +35,13 @@ namespace WebAppAzure.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Contact()
+        public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
