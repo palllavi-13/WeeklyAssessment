@@ -3,14 +3,14 @@
 @{
     ViewData["Title"] = "Display";
 }
-
+<link href="~/css/site.css" rel="stylesheet" />
 <h1>Total Number of students are:  @ViewBag.noc </h1>
 <h2>Displaying Student Records</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
